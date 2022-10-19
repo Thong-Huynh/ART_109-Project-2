@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sea Turtle</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -15,7 +16,14 @@
             <h1>Title</h1>
         </section>
         <section class="two">
-            <h1>Second Page</h1>
+            <!-- <h1>Second Page</h1> -->
+            <div class="scroll-container">
+                <div class="scroll-text" data-aos="fade-left" data-aos-mirror="true">
+                    <p>
+                        This is text box
+                    </p>
+                </div>
+            </div>
         </section>
         <section class="three">
             <h1>Third Page</h1>
@@ -25,6 +33,13 @@
         </section>
 
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800
+        });
+    </script>
 
 </body>
 

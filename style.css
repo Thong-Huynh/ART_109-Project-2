@@ -7,17 +7,16 @@
 
 section {
     height: 100vh;
-    /* width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
-    /* scroll-snap-stop: always; */
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .container {
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     height: 100vh;
 }
 
@@ -27,6 +26,10 @@ section {
 
 .two {
     background: rgb(209, 186, 165);
+    /* width: 100vw; */
+    padding: 2rem 1rem;
+    /* display: flex; */
+    /* align-items: flex-start; */
 }
 
 .three {
@@ -35,4 +38,10 @@ section {
 
 .four {
     background: rgb(165, 172, 214);
+}
+
+
+.scroll-text {
+    padding: 100px;
+    background-color: #834646;
 }
