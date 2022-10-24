@@ -2,69 +2,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sea Turtle</title>
-    <script type="text/javascript">
-        document.addEventListener('scroll', (event) => {
-          const aosAnimation = document.querySelectorAll('[data-aos]');
-          observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.intersectionRatio > 0) {
-                entry.target.classList.add('aos-animate');
-              } else {
-                entry.target.classList.remove('aos-animate');
-              }
-            });
-          });
-          aosAnimation.forEach(aosObject => {
-            observer.observe(aosObject);
-          });
-        }, {
-          capture: true,
-          passive: true,
-        })
-      </script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sea Turtle</title>
+  <script type="text/javascript">
+    document.addEventListener('scroll', (event) => {
+      const aosAnimation = document.querySelectorAll('[data-aos]');
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.intersectionRatio > 0) {
+            entry.target.classList.add('aos-animate');
+          } else {
+            entry.target.classList.remove('aos-animate');
+          }
+        });
+      });
+      aosAnimation.forEach(aosObject => {
+        observer.observe(aosObject);
+      });
+    }, {
+      capture: true,
+      passive: true,
+    })
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="container">
-        <section class="one">
-            <h1>Title</h1>
-        </section>
-        <section class="two">
-            <div class="scroll-container">
-                <div class="scroll-text" data-aos="fade-right" data-aos-mirror="true">
-                    <p>
-                        This is text box
-                    </p>
-                </div>
-                <div class="imgDown" data-aos="fade-down" data-aos-mirror="true" data-aos-delay="1000">
-                    <p>
-                        This is img
-                    </p>
-                </div>
-                
-            </div>
-        </section>
-        <section class="three">
-            <h1>Third Page</h1>
-        </section>
-        <section class="four">
-            <h1>Fourth Page</h1>
-        </section>
+  <div class="container">
+    <section class="one">
+      <!-- <h1>Title</h1> -->
+    </section>
+    <section class="two">
+      <div class="scroll-container">
+        <div class="scroll-text" data-aos="fade-right" data-aos-mirror="true" data-aos-delay="500">
+          <h3>
+            The beginning…
+          </h3>
+          <ul>
+            <li>Of the 50 to 200 eggs laid, roughly 20 percent will never hatch</li>
+            <li>~ 45 days later, baby sea turtles begin their journey to the sea</li>
+            <li>Their size is about 2 inches to relatively close to an adult hand</li>
+          </ul>
+        </div>
+        <div class="imgContent">
+          <div class="imgDown" data-aos="fade-down" data-aos-mirror="true" data-aos-delay="1000">
+          </div>
+          <p>
+            This is img 1
+          </p>
+        </div>
 
-    </div>
+      </div>
+    </section>
+    <section class="three">
+      <h1>Third Page</h1>
+    </section>
+    <section class="four">
+      <h1>Fourth Page</h1>
+    </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200
-        });
-    </script>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200
+    });
+  </script>
 
 </body>
 
