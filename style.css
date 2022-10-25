@@ -5,8 +5,10 @@
     --font1: 'Noto Serif Display', serif;
     --font2: 'Jost', sans-serif;
     --bkg: rgb(192, 156, 113);
-    --textBkg: rgb(226, 215, 202);
+    --textBkg: rgb(235, 228, 220);
     --blue: rgb(27, 87, 128);
+    --green: rgb(115, 167, 127);
+    --gray: rgb(78, 78, 78);
 }
 
 * {
@@ -30,10 +32,39 @@ section {
     height: 100vh;
 }
 
-.one {
-    background: url(./assets/beach-bkg.png) no-repeat;
+.one {}
+
+.wave-1 {
+    background: url(./assets/wave-1@2x.png) no-repeat;
+    height: 100vh;
+    width: 100%;
     background-position: bottom;
     background-size: cover;
+}
+
+.wave-2 {
+    background: url(./assets/wave-2@2x.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.wave-3 {
+    background: url(./assets/wave-3@2x.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.bkg-plain {
+    background: url(./assets/beach-bkg@2x.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .two {
@@ -59,18 +90,24 @@ section {
 }
 
 .scroll-text {
-    height: 60vh;
-    margin-top: 20vh;
+    height: 70vh;
+    margin-top: 15vh;
     padding: 5% 10%;
     background: var(--textBkg);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 20px var(--gray);
 }
 
 h3 {
-    color: var(--blue);
+    color: var(--green);
     font-family: var(--font1);
-    font-weight: 700;
-    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 5.5rem;
     margin-bottom: 0.5em;
 }
 
@@ -78,8 +115,14 @@ li {
     font-family: var(--font2);
     font-weight: 300;
     font-size: 2rem;
-    line-height: 2em;
+    line-height: 2.25em;
 
+}
+
+span {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--green);
 }
 
 .imgContent {
