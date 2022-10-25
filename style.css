@@ -58,8 +58,16 @@ section {
     background-size: cover;
 }
 
+.turtle-underwater {
+    background: url(./assets/turtle-underwater@2x.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+}
+
 .bkg-plain {
-    background: url(./assets/beach-bkg@2x.png) no-repeat;
+    background: url(./assets/beach-bkg-no-turtle@2x.png) no-repeat;
     height: 100vh;
     width: 100%;
     background-position: bottom;
@@ -104,10 +112,10 @@ section {
 
 h3 {
     color: var(--green);
-    font-family: var(--font1);
+    font-family: var(--font2);
     text-transform: capitalize;
     font-weight: 900;
-    font-size: 5.5rem;
+    font-size: 6rem;
     margin-bottom: 0.5em;
 }
 
@@ -116,7 +124,6 @@ li {
     font-weight: 300;
     font-size: 2rem;
     line-height: 2.25em;
-
 }
 
 span {
