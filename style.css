@@ -115,20 +115,22 @@ h3 {
     font-family: var(--font2);
     text-transform: capitalize;
     font-weight: 900;
-    font-size: 6rem;
+    /* font-size: 4.5vw; */
+    font-size: calc(2.5vh + 3vw);
     margin-bottom: 0.5em;
 }
 
 li {
     font-family: var(--font2);
     font-weight: 300;
-    font-size: 2rem;
+    /* font-size: 1.75vw; */
+    font-size: calc(1vh + 1vw);
     line-height: 2.25em;
 }
 
 span {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: calc(2.25vh + 1vw);
     color: var(--green);
 }
 
