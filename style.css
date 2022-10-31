@@ -8,6 +8,7 @@
     --textBkg: rgb(235, 228, 220);
     --blue: rgb(27, 87, 128);
     --green: rgb(115, 167, 127);
+    --red: rgb(197, 100, 100);
     --gray: rgb(78, 78, 78);
 }
 
@@ -77,11 +78,13 @@ section {
 
 .two {
     background: var(--bkg);
-    padding: 2rem 1rem;
+    padding: 0 2vw;
 }
 
 .three {
     background: var(--bkg);
+    padding: 0 2vw;
+    overflow: hidden;
 
 }
 
@@ -97,7 +100,7 @@ section {
 
 }
 
-.scroll-text {
+.scroll-text-1 {
     height: 70vh;
     margin-top: 15vh;
     padding: 5% 10%;
@@ -110,7 +113,7 @@ section {
     box-shadow: 0px 0px 20px var(--gray);
 }
 
-h3 {
+.scroll-text-1 h3 {
     color: var(--green);
     font-family: var(--font2);
     text-transform: capitalize;
@@ -128,10 +131,39 @@ li {
     line-height: 2.25em;
 }
 
-span {
+.scroll-text-1 span {
     font-weight: 700;
     font-size: calc(2.25vh + 1vw);
     color: var(--green);
+}
+
+.scroll-text-2 {
+    height: 70vh;
+    margin-top: 15vh;
+    padding: 5% 10%;
+    background: var(--textBkg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 20px var(--gray);
+}
+
+.scroll-text-2 h3 {
+    color: var(--red);
+    font-family: var(--font2);
+    text-transform: capitalize;
+    font-weight: 900;
+    /* font-size: 4.5vw; */
+    font-size: calc(2.5vh + 3vw);
+    margin-bottom: 0.5em;
+}
+
+.scroll-text-2 span {
+    font-weight: 700;
+    font-size: calc(2.25vh + 1vw);
+    color: var(--red);
 }
 
 .imgContent {
