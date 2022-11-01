@@ -169,18 +169,10 @@ li {
 .imgContent {
     display: flex;
     /* flex-direction: column; */
-    align-items: end;
+    align-items: start;
     justify-content: center;
-    padding-bottom: 10vw;
+    overflow: hidden;
 }
-
-/* .imgDown {
-    background: url(./assets/turtle-1.png);
-    height: 200px;
-    width: 200px;
-    background-position: center;
-    background-size: cover;
-} */
 
 .turtle-1 {
     background: url(./assets/turtle-1.png);
