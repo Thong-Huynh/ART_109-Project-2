@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: var(--bkg);
+}
+
 section {
     height: 100vh;
     display: flex;
@@ -31,9 +35,8 @@ section {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
-}
 
-.one {}
+}
 
 .wave-1 {
     background: url(./assets/wave-1@2x.png) no-repeat;
@@ -76,21 +79,19 @@ section {
     overflow: hidden;
 }
 
+.one {}
+
 .two {
-    background: var(--bkg);
     padding: 0 2vw;
 }
 
 .three {
-    background: var(--bkg);
     padding: 0 2vw;
     overflow: hidden;
 
 }
 
-.four {
-    background: var(--bkg);
-}
+.four {}
 
 .scroll-container {
     width: 100vw;
@@ -175,24 +176,24 @@ li {
 
 .turtle-1 {
     background: url(./assets/turtle-1.png);
-    height: 200px;
-    width: 200px;
+    height: 15vw;
+    width: 15vw;
     background-position: center;
     background-size: cover;
 }
 
 .turtle-2 {
     background: url(./assets/turtle-1.png);
-    height: 200px;
-    width: 200px;
+    height: 15vw;
+    width: 15vw;
     background-position: center;
     background-size: cover;
 }
 
 .turtle-3 {
     background: url(./assets/turtle-1.png);
-    height: 200px;
-    width: 200px;
+    height: 15vw;
+    width: 15vw;
     background-position: center;
     background-size: cover;
 }
