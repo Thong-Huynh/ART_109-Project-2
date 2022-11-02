@@ -31,6 +31,10 @@
 </head>
 
 <body>
+  <div class="sound">
+    <button onclick="mute()">Mute</button>
+    <button onclick="unMute()">Unmute</button>
+  </div>
   <div class="container">
     <section class="one">
       <div class="bkg-plain">
@@ -118,7 +122,7 @@
             The Journey carry on...
           </h3>
           <ul>
-            <p>Use the <u>links below</u> to find out <span>more information</span> about the sea turtles: </p>
+            <p>Use the <u>links below</u> for <span>more information</span> about the sea turtles: </p>
             <li><a href="https://www.youtube.com/watch?v=Ipf0fehg5os" target="_blank"> Surviving Sea Turtles | Untamed -
                 Nat Geo
                 WILD</a></li>
@@ -134,11 +138,42 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
     integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="./script/waves.js"></script>
   <script src="./script/turtle.js"></script>
   <script src="./script/vulture.js"></script>
   <script src="./script/ocean.js"></script>
 
+  <!-- This is sound js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    var bird_sound = new Howl({
+      src: ['./assets/seagull-on-beach.mp3'],
+      loop: true,
+      volume: 0,
+    });
+    var wave_sound = new Howl({
+      src: ['./assets/water-wave-beach.mp3'],
+      loop: true,
+      volume: 0,
+    });
+
+    bird_sound.play();
+    wave_sound.play();
+
+    function mute() {
+      bird_sound.volume(0);
+      wave_sound.volume(0);
+    }
+
+    function unMute() {
+      bird_sound.volume(1);
+      wave_sound.volume(1);
+    }
+  </script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

@@ -75,6 +75,32 @@ span {
     font-size: calc(2.25vh + 1vw);
 }
 
+li {
+    line-height: 1.5em;
+    margin-bottom: 25px;
+}
+
+/* This is sound */
+
+.sound {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    z-index: 10;
+}
+
+button {
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 0.55em;
+    color: var(--bkg);
+    background: var(--gray);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* This is page 1 */
 
 .wave-1 {
@@ -252,6 +278,7 @@ span {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 .last-turtles {
@@ -345,8 +372,8 @@ span {
 }
 
 .scroll-text-3 p {
-    /* line-height: 1.5em; */
-    margin-bottom: 15px;
+    line-height: 1.5em;
+    margin-bottom: 25px;
 }
 
 .scroll-text-3 span {
@@ -356,7 +383,7 @@ span {
 a {
     text-decoration: none;
     color: var(--blue);
-    font-weight: 600;
+    font-weight: 500;
     font-size: calc(1.1vh + 0.5vw);
     transition: ease-in-out 0.3s;
 }

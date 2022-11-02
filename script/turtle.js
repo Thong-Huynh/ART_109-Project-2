@@ -37,7 +37,7 @@ let turtle4 = anime({
 let turtle5 = anime({
     targets: '.turtle-5',
     translateY: [-150, 1500],
-    translateX: [0, 100, -100, 0],
+    translateX: [0, -100, 100, 0],
     delay: 4000,
     duration: 10000,
     easing: 'easeInOutSine',
@@ -57,7 +57,7 @@ let turtle6 = anime({
 let turtle7 = anime({
     targets: '.turtle-7',
     translateY: [-150, 1500],
-    translateX: [0, 100, -100, 0],
+    translateX: [0, -100, 100, 0],
     delay: 2500,
     duration: 10000,
     easing: 'easeInOutSine',
