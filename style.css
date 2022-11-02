@@ -395,3 +395,13 @@ a {
     border-radius: 10px;
     transition: ease-in-out 0.3s;
 }
+
+.credit {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 50%;
+    font-size: calc(1vh + 0.5vw);
+}
