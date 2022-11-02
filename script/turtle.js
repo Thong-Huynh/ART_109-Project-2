@@ -21,7 +21,45 @@ let turtle3 = anime({
     translateY: [0, 1000],
     translateX: [5, -20, 15],
     duration: 5000,
-    // easing: 'easeInOutSine',
     easing: 'steps(15)',
+    loop: true,
+});
+
+let turtle4 = anime({
+    targets: '.turtle-4',
+    translateY: [-150, 1500],
+    translateX: [0, 100, -100, 0],
+    duration: 10000,
+    easing: 'easeInOutSine',
+    loop: true,
+});
+
+let turtle5 = anime({
+    targets: '.turtle-5',
+    translateY: [-150, 1500],
+    translateX: [0, 100, -100, 0],
+    delay: 4000,
+    duration: 10000,
+    easing: 'easeInOutSine',
+    loop: true,
+});
+
+let turtle6 = anime({
+    targets: '.turtle-6',
+    translateY: [-150, 1500],
+    translateX: [0, 100, -100, 0],
+    delay: 1000,
+    duration: 10000,
+    easing: 'easeInOutSine',
+    loop: true,
+});
+
+let turtle7 = anime({
+    targets: '.turtle-7',
+    translateY: [-150, 1500],
+    translateX: [0, 100, -100, 0],
+    delay: 2500,
+    duration: 10000,
+    easing: 'easeInOutSine',
     loop: true,
 });

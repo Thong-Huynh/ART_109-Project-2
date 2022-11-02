@@ -5,8 +5,8 @@
     --font1: 'Noto Serif Display', serif;
     --font2: 'Jost', sans-serif;
     --bkg: rgb(192, 156, 113);
-    --textBkg: rgb(235, 228, 220);
-    --blue: rgb(27, 87, 128);
+    --white: rgb(235, 228, 220);
+    --blue: rgb(40, 111, 158);
     --green: rgb(115, 167, 127);
     --red: rgb(197, 100, 100);
     --gray: rgb(78, 78, 78);
@@ -20,6 +20,10 @@
 
 body {
     background: var(--bkg);
+    font-family: var(--font2);
+    font-weight: 300;
+    font-size: calc(1vh + 1vw);
+    line-height: 2.25em;
 }
 
 section {
@@ -37,6 +41,41 @@ section {
     height: 100vh;
 
 }
+
+.one {
+    overflow: hidden;
+}
+
+.two {
+    padding: 0 2vw;
+    overflow: hidden;
+}
+
+.three {
+    padding: 0 2vw;
+    overflow: hidden;
+
+}
+
+.four {
+    overflow: hidden;
+}
+
+h3 {
+    font-family: var(--font2);
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: calc(2.5vh + 3vw);
+    margin-bottom: 0.5em;
+    line-height: 1em;
+}
+
+span {
+    font-weight: 700;
+    font-size: calc(2.25vh + 1vw);
+}
+
+/* This is page 1 */
 
 .wave-1 {
     background: url(./assets/wave-1@2x.png) no-repeat;
@@ -79,33 +118,20 @@ section {
     overflow: hidden;
 }
 
-.one {}
-
-.two {
-    padding: 0 2vw;
-}
-
-.three {
-    padding: 0 2vw;
-    overflow: hidden;
-
-}
-
-.four {}
+/* This is page 2 */
 
 .scroll-container {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 1fr;
-
 }
 
 .scroll-text-1 {
     height: 70vh;
     margin-top: 15vh;
     padding: 5% 10%;
-    background: var(--textBkg);
+    background: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,54 +142,10 @@ section {
 
 .scroll-text-1 h3 {
     color: var(--green);
-    font-family: var(--font2);
-    text-transform: capitalize;
-    font-weight: 900;
-    /* font-size: 4.5vw; */
-    font-size: calc(2.5vh + 3vw);
-    margin-bottom: 0.5em;
-}
-
-li {
-    font-family: var(--font2);
-    font-weight: 300;
-    /* font-size: 1.75vw; */
-    font-size: calc(1vh + 1vw);
-    line-height: 2.25em;
 }
 
 .scroll-text-1 span {
-    font-weight: 700;
-    font-size: calc(2.25vh + 1vw);
     color: var(--green);
-}
-
-.scroll-text-2 {
-    height: 70vh;
-    margin-top: 15vh;
-    padding: 5% 10%;
-    background: var(--textBkg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2vw;
-    box-shadow: 0px 0px 20px var(--gray);
-}
-
-.scroll-text-2 h3 {
-    color: var(--red);
-    font-family: var(--font2);
-    text-transform: capitalize;
-    font-weight: 900;
-    font-size: calc(2.5vh + 3vw);
-    margin-bottom: 0.5em;
-}
-
-.scroll-text-2 span {
-    font-weight: 700;
-    font-size: calc(2.25vh + 1vw);
-    color: var(--red);
 }
 
 .imgContent {
@@ -197,6 +179,29 @@ li {
     background-size: cover;
 }
 
+/* This is page 3 */
+
+.scroll-text-2 {
+    height: 70vh;
+    margin-top: 15vh;
+    padding: 5% 10%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 20px var(--gray);
+}
+
+.scroll-text-2 h3 {
+    color: var(--red);
+}
+
+.scroll-text-2 span {
+    color: var(--red);
+}
+
 .three .imgContent {
     display: flex;
     flex-direction: column;
@@ -213,10 +218,153 @@ li {
     background-size: cover;
 }
 
+.sub-imgContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
 .vulture-2 {
     background: url(./assets/vulture-right@2x.png);
+    opacity: 60%;
     height: 35vh;
     width: 35vh;
     background-position: center;
     background-size: cover;
+}
+
+.vulture-3 {
+    background: url(./assets/vulture-left@2x.png);
+    opacity: 20%;
+    height: 15vh;
+    width: 15vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* This is page 4 */
+
+.four .imgContent {
+    display: grid;
+    grid-template-rows: 1vw 1fr;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.last-turtles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.turtle-4 {
+    background: url(./assets/turtle-1.png);
+    height: 10vw;
+    width: 10vw;
+    justify-self: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.turtle-5 {
+    background: url(./assets/turtle-1.png);
+    height: 10vw;
+    width: 10vw;
+    justify-self: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.turtle-6 {
+    background: url(./assets/turtle-1.png);
+    height: 10vw;
+    width: 10vw;
+    justify-self: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.turtle-7 {
+    background: url(./assets/turtle-1.png);
+    height: 10vw;
+    width: 10vw;
+    justify-self: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.ocean-1 {
+    background: url(./assets/ocean-layer-1@2x.png);
+    height: 100vh;
+    width: 100vw;
+    opacity: 95%;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+}
+
+.ocean-2 {
+    background: url(./assets/ocean-layer-2@2x.png);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.ocean-3 {
+    background: url(./assets/ocean-layer-3@2x.png);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.scroll-text-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 50vw;
+    padding: 5% 10%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 20px var(--gray);
+    z-index: 5;
+}
+
+.scroll-text-3 h3 {
+    color: var(--blue);
+}
+
+.scroll-text-3 p {
+    /* line-height: 1.5em; */
+    margin-bottom: 15px;
+}
+
+.scroll-text-3 span {
+    color: var(--blue);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 600;
+    font-size: calc(1.1vh + 0.5vw);
+    transition: ease-in-out 0.3s;
+}
+
+.scroll-text-3 li :hover {
+    color: var(--white);
+    background: var(--blue);
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
 }
