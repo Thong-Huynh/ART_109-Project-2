@@ -380,7 +380,7 @@ button {
     color: var(--blue);
 }
 
-a {
+li a {
     text-decoration: none;
     color: var(--blue);
     font-weight: 500;
@@ -388,11 +388,32 @@ a {
     transition: ease-in-out 0.3s;
 }
 
-.scroll-text-3 li :hover {
+.scroll-text-3 a:hover {
     color: var(--white);
     background: var(--blue);
     padding: 10px;
     border-radius: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+.sub-credit {
+    font-size: calc(1vh + 0.35vw);
+    font-style: italic;
+    opacity: 40%;
+    font-weight: 900;
+    color: var(--bkg);
+}
+
+.sub-credit a {
+    text-decoration: none;
+    color: var(--blue);
+    transition: ease-in-out 0.3s;
+}
+
+.sub-credit a:hover {
+    background: var(--blue);
+    color: var(--white);
+    padding: 4px 8px;
     transition: ease-in-out 0.3s;
 }
 
@@ -402,6 +423,23 @@ a {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    opacity: 50%;
-    font-size: calc(1vh + 0.5vw);
+    color: var(--white);
+    opacity: 90%;
+    font-size: calc(1vh + 0.35vw);
+
+}
+
+.author {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--bkg);
+    transition: ease-in-out 0.3s;
+}
+
+.credit a:hover {
+    color: var(--white);
+    background: var(--bkg);
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
 }
