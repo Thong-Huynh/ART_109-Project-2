@@ -182,7 +182,7 @@ button {
 }
 
 .turtle-1 {
-    background: url(./assets/turtle-1.png);
+    background: url(./assets/turtle-1.1.png);
     height: 15vw;
     width: 15vw;
     background-position: center;
@@ -190,7 +190,7 @@ button {
 }
 
 .turtle-2 {
-    background: url(./assets/turtle-1.png);
+    background: url(./assets/turtle-1.1.png);
     height: 15vw;
     width: 15vw;
     background-position: center;
@@ -198,7 +198,7 @@ button {
 }
 
 .turtle-3 {
-    background: url(./assets/turtle-1.png);
+    background: url(./assets/turtle-1.1.png);
     height: 15vw;
     width: 15vw;
     background-position: center;
@@ -288,7 +288,7 @@ button {
 }
 
 .turtle-4 {
-    background: url(./assets/turtle-1.png);
+    background: url(./assets/turtle-1.1.png);
     height: 10vw;
     width: 10vw;
     justify-self: center;
@@ -297,7 +297,7 @@ button {
 }
 
 .turtle-5 {
-    background: url(./assets/turtle-1.png);
+    background: url(./assets/turtle-1.1.png);
     height: 10vw;
     width: 10vw;
     justify-self: center;
@@ -306,7 +306,7 @@ button {
 }
 
 .turtle-6 {
-    background: url(./assets/turtle-1.png);
+    background: url(./assets/turtle-1.1.png);
     height: 10vw;
     width: 10vw;
     justify-self: center;
@@ -315,7 +315,7 @@ button {
 }
 
 .turtle-7 {
-    background: url(./assets/turtle-1.png);
+    background: url(./assets/turtle-1.1.png);
     height: 10vw;
     width: 10vw;
     justify-self: center;
