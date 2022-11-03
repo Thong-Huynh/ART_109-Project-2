@@ -1,10 +1,10 @@
 let vulture1 = anime({
     targets: '.vulture-1',
-    translateX: [0, 70],
-    translateY: [50, 0],
+    translateX: [1500, 0],
+    translateY: [1000, 0],
     rotate: [0, 3],
     duration: 1500,
-    easing: 'easeInOutSine',
+    easing: 'spring(10, 60, 30, 2)',
     loop: true,
     direction: 'alternate',
 });
